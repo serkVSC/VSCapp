@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="650.0" styleClass="anchor" stylesheets="@../gui_css/cssconfig.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controller.AlterarJogosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b1b1b00" height="136.0" layoutX="65.0" layoutY="165.0" stroke="YELLOW" strokeType="INSIDE" strokeWidth="2.0" styleClass="subtitulospagarquotas" width="520.0" />
+      <Label layoutX="207.0" layoutY="15.0" prefHeight="37.0" prefWidth="236.0" styleClass="titulos" text="ALTERAR JOGOS" />
+      <Label layoutX="29.0" layoutY="15.0" styleClass="voltar" text="⬅" />
+      <Button layoutX="18.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleVoltarButton" prefHeight="44.0" prefWidth="46.0" styleClass="pesquisarbtn" stylesheets="@../gui_css/cssconfig.css" />
+      <Label layoutX="443.0" layoutY="57.0" styleClass="subtitulos" text="Época 2020/2021" />
+      <TextField fx:id="procurarjogo" layoutX="65.0" layoutY="101.0" prefHeight="34.0" prefWidth="222.0" promptText="COD JOGO *" styleClass="txtfield" />
+      <Separator fx:id="s1" layoutX="65.0" layoutY="133.0" prefHeight="4.0" prefWidth="245.0" />
+      <Label layoutX="282.0" layoutY="95.0" styleClass="pesquisar" text="🔎" textFill="WHITE" />
+      <ImageView fitHeight="34.0" fitWidth="175.0" layoutX="438.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true" styleClass="liganos" />
+      <ImageView fitHeight="89.0" fitWidth="86.0" layoutX="92.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true" styleClass="logo" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="262.0" styleClass="bemvindosocio" text="Vitória SC" />
+      <Label fx:id="resultadoE" alignment="CENTER" layoutX="206.0" layoutY="201.0" prefHeight="43.0" prefWidth="46.0" styleClass="bemvindosocio2" text="0" />
+      <Label alignment="CENTER" layoutX="295.0" layoutY="183.0" prefHeight="72.0" prefWidth="58.0" styleClass="resultado" text=": " />
+      <Label fx:id="resultadoA" alignment="CENTER" layoutX="385.0" layoutY="201.0" prefHeight="43.0" prefWidth="58.0" styleClass="bemvindosocio2" text="0" />
+      <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="266.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" styleClass="triangulo" />
+      <Button fx:id="cima1" layoutX="267.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleAumentar1Button" prefHeight="34.0" prefWidth="33.0" styleClass="txtbtn" />
+      <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="266.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" styleClass="triangulo" />
+      <Button fx:id="baixo1" layoutX="267.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleDiminuir1Button" prefHeight="34.0" prefWidth="33.0" styleClass="txtbtn" />
+      <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="339.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" styleClass="triangulo" />
+      <Button fx:id="baixo2" layoutX="339.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleDiminuir2Button" prefHeight="34.0" prefWidth="33.0" styleClass="txtbtn" />
+      <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="339.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" styleClass="triangulo" />
+      <Button fx:id="cima2" layoutX="339.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleAumentar2Button" prefHeight="34.0" prefWidth="33.0" styleClass="txtbtn" />
+      <ImageView fx:id="imgadv" fitHeight="89.0" fitWidth="72.0" layoutX="473.0" layoutY="177.0" pickOnBounds="true" styleClass="adv" />
+      <Label fx:id="adversarios" alignment="CENTER_RIGHT" layoutX="350.0" layoutY="262.0" prefHeight="26.0" prefWidth="210.0" styleClass="bemvindosocio" text="Adversário" />
+      <Label fx:id="msgerro" alignment="CENTER" layoutX="207.0" layoutY="319.0" prefWidth="236.0" styleClass="msgerro" text="(Existem erros nos campos assinalados)" />
+      <Button fx:id="alterar" layoutX="285.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleAlterarButton" prefHeight="37.0" prefWidth="80.0" styleClass="btn" stylesheets="@../gui_css/cssconfig.css" text="ALTERAR" />
+      <ImageView fx:id="imgsporting" fitHeight="78.0" fitWidth="80.0" layoutX="471.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" styleClass="sporting" />
+      <ImageView fx:id="imgrioave" fitHeight="78.0" fitWidth="80.0" layoutX="469.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" styleClass="rioave" />
+      <ImageView fx:id="imgbenfica" fitHeight="86.0" fitWidth="86.0" layoutX="465.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true" styleClass="benfica" />
+      <ImageView fx:id="imgboavista" fitHeight="86.0" fitWidth="80.0" layoutX="470.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" styleClass="boavista" />
+      <ImageView fx:id="imgporto" fitHeight="89.0" fitWidth="86.0" layoutX="466.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" styleClass="porto" />
+      <Button layoutX="272.0" layoutY="90.0" mnemonicParsing="false" onAction="#handlePesquisarSociosButton" prefHeight="44.0" prefWidth="46.0" styleClass="pesquisarbtn" stylesheets="@../gui_css/cssconfig.css" />
+   </children>
+</AnchorPane>

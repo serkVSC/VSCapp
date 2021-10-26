@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="650.0" styleClass="anchor" stylesheets="@../gui_css/cssconfig.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controller.MenuGestorController">
+   <children>
+      <ImageView fitHeight="84.0" fitWidth="79.0" layoutX="285.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" styleClass="modalidades" />
+      <ImageView fitHeight="69.0" fitWidth="79.0" layoutX="498.0" layoutY="227.0" pickOnBounds="true" styleClass="infojogos" />
+      <ImageView fitHeight="69.0" fitWidth="79.0" layoutX="292.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" styleClass="validarcompras" />
+      <ImageView fitHeight="63.0" fitWidth="104.0" layoutX="67.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" styleClass="socio" />
+      <ImageView fitHeight="69.0" fitWidth="72.0" layoutX="501.0" layoutY="81.0" pickOnBounds="true" styleClass="jogosGestor" />
+      <Label fx:id="menugestor" layoutX="227.0" layoutY="15.0" styleClass="titulos" stylesheets="@../gui_css/cssconfig.css" text="MENU GESTOR" />
+      <Button layoutX="274.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleValidarComprasButton" prefHeight="45.0" prefWidth="104.0" styleClass="btn" stylesheets="@../gui_css/cssconfig.css" text="VALIDAR COMPRAS " textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Button layoutX="60.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleVisualizarSocioButton" prefHeight="45.0" prefWidth="104.0" styleClass="btn" stylesheets="@../gui_css/cssconfig.css" text="VISUALIZAR SÓCIO" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Button layoutX="487.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleInserirJogoButton" prefHeight="45.0" prefWidth="104.0" styleClass="btn" stylesheets="@../gui_css/cssconfig.css" text="INSERIR JOGO" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Button layoutX="275.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleControlarModalidadesButton" prefHeight="45.0" prefWidth="104.0" styleClass="btn" stylesheets="@../gui_css/cssconfig.css" text="CONTROLAR MODALIDADES" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Button layoutX="487.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleAlterarJogosButton" prefHeight="46.0" prefWidth="104.0" styleClass="btn" stylesheets="@../gui_css/cssconfig.css" text="ALTERAR  JOGOS " textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Label fx:id="voltar" layoutX="23.0" layoutY="15.0" styleClass="voltar" text="⬅" />
+      <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="78.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" styleClass="informacoes" />
+      <Button layoutX="60.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleVisualizarInformacaoButton" prefHeight="45.0" prefWidth="104.0" styleClass="btn" stylesheets="@../gui_css/cssconfig.css" text="VISUALIZAR INFORMAÇÕES" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Button layoutX="17.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleVoltarButton" prefHeight="45.0" prefWidth="37.0" styleClass="voltar" stylesheets="@../gui_css/cssconfig.css" textAlignment="CENTER" />
+      <Label fx:id="msgerro" alignment="CENTER" layoutX="206.0" layoutY="361.0" prefHeight="18.0" prefWidth="241.0" styleClass="msgerro" text="(Não existem compras para validar)" />
+   </children>
+</AnchorPane>

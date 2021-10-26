@@ -1,0 +1,887 @@
+.mainFxmlClass {
+    
+}
+
+.anchor {
+  -fx-background-image: url('../images/fundo.png');  
+}
+
+.anchorInicio {
+  -fx-background-image: url('../images/paginabemvindo.jpg');  
+}
+
+
+.txtfield{
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-align: center; 
+    -fx-font-family: "Arial"; 
+    -fx-font-size: 18px;
+}
+
+
+.txtbtn { 
+  -fx-text-fill: #FFFFFF;
+  -fx-border-color: transparent;
+  -fx-background-color: transparent;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+.txtbtn:hover { 
+  -fx-text-fill: #b3b3b3;
+  -fx-border-color: transparent;
+  -fx-background-color: transparent;
+  -fx-font-weight: bold;
+  -fx-text-decoration: underline;
+  -fx-cursor: hand;
+}
+
+
+.btn {
+  -fx-background-color: #FFFF00;
+  -fx-text-fill: black;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+.btn:hover {
+  -fx-background-color: #9c9c02;
+  -fx-text-fill: black;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+
+.voltar{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+}
+
+.voltar:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9c9c02;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.pesquisarbtn{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+}
+
+.pesquisarbtn:hover {
+  -fx-background-color: transparent;
+  -fx-cursor: hand;
+}
+
+
+.titulos{
+    -fx-text-align: center;
+    -fx-text-fill: #e4ca0a;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+}
+
+.subtitulos{
+    -fx-text-align: center;
+    -fx-text-fill: #aba8a8;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.subtitulospagarquotas{
+    -fx-text-align: center;
+    -fx-text-fill: #000000;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.subsubtitulospagarquotas{
+    -fx-text-align: center;
+    -fx-text-fill: #000000;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.subsubtitulos{
+    -fx-text-align: center;
+    -fx-text-fill: #e4ca0a;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.pagarquotas{
+    -fx-text-align: center;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.msgerro{
+    -fx-text-align: center;
+    -fx-text-fill: #a2a1a1;
+    -fx-font-size: 12px;
+}
+
+.bemvindosocio{
+    -fx-text-align: center;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 22px;
+}
+
+.temquotas{
+    -fx-text-align: center;
+    -fx-text-fill: #aba8a8;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.quotasemdia{
+    -fx-text-align: center;
+    -fx-text-fill: #72f169;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.quotasatrasadas{
+    -fx-text-align: center;
+    -fx-text-fill: #ff704d;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.pesquisar{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFF00;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+}
+
+.pesquisar:hover {
+  -fx-text-fill: #FFFFFF;
+  -fx-cursor: hand;
+}
+
+
+.dropdown {
+  -fx-color: white;
+  -fx-text-align: center;
+  -fx-position: relative;
+  -fx-display: inline-block;
+  -fx-display: block;
+}
+
+
+.datepicker > .text-field {
+    -fx-background-color: transparent;
+    -fx-background-insets: 1 0 1 1;
+    -fx-background-radius: 2 0 0 2;
+}
+
+.datepicker:focused > .text-field,
+.datepicker > .text-field:focused {
+    -fx-background-color: transparent;
+    -fx-background-insets: 1 0 1 1, 1 0 1 1, 3 2 3 3;
+    -fx-background-radius: 2 0 0 2, 1 0 0 1, 0;
+}
+
+
+
+.cartaologin{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/cartaosocio.png');  
+}
+
+.imagemtitulo{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/vsc.png');  
+}
+
+.quotas{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/estadio-socio.png');  
+}
+
+.reservarbilhetes{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/bilhetes.png');  
+}
+
+.historicobilhetes{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/historico.png');  
+}
+
+.historicojogos{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/scoreboard.png');  
+}
+
+.validarcompras{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/compras.png');  
+    -fx-background-color: transparent;
+}
+
+
+
+
+   
+
+.mainFxmlClass {
+    
+}
+
+.anchor {
+  -fx-background-image: url('../images/fundo.png');  
+}
+
+.anchorInicio {
+  -fx-background-image: url('../images/paginabemvindo.jpg');  
+}
+
+
+.txtfield{
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-align: center; 
+    -fx-font-family: "Arial"; 
+    -fx-font-size: 18px;
+}
+
+.txtfield2{
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-align: center; 
+    -fx-font-family: "Arial"; 
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.txtbtn { 
+  -fx-text-fill: #FFFFFF;
+  -fx-border-color: transparent;
+  -fx-background-color: transparent;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+
+.btn {
+  -fx-background-color: #FFFF00;
+  -fx-text-fill: black;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+.btn:hover {
+  -fx-background-color: #9c9c02;
+  -fx-text-fill: black;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+
+.voltar{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+}
+
+.voltar:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9c9c02;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.pesquisarbtn{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+}
+
+.pesquisarbtn:hover {
+  -fx-background-color: transparent;
+  -fx-cursor: hand;
+}
+
+
+.titulos{
+    -fx-text-align: center;
+    -fx-text-fill: #e4ca0a;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+}
+
+.subtitulos{
+    -fx-text-align: center;
+    -fx-text-fill: #aba8a8;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.subtitulospagarquotas{
+    -fx-text-align: center;
+    -fx-text-fill: #000000;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.subsubtitulos{
+    -fx-text-align: center;
+    -fx-text-fill: #e4ca0a;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.pagarquotas{
+    -fx-text-align: center;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.msgerro{
+    -fx-text-align: center;
+    -fx-text-fill: #a2a1a1;
+    -fx-font-size: 12px;
+}
+
+.bemvindosocio{
+    -fx-text-align: center;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 22px;
+}
+
+.bemvindosocio2{
+    -fx-text-align: center;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 38px;
+}
+
+.temquotas{
+    -fx-text-align: center;
+    -fx-text-fill: #aba8a8;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.quotasemdia{
+    -fx-text-align: center;
+    -fx-text-fill: #72f169;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.quotasatrasadas{
+    -fx-text-align: center;
+    -fx-text-fill: #ff704d;
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.pesquisar{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFF00;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 24px;
+}
+
+.pesquisar:hover {
+  -fx-text-fill: #FFFFFF;
+  -fx-cursor: hand;
+}
+
+
+.dropdown {
+  -fx-color: white;
+  -fx-text-align: center;
+  -fx-position: relative;
+  -fx-display: inline-block;
+  -fx-display: block;
+}
+
+
+.datepicker > .text-field {
+    -fx-background-color: transparent;
+    -fx-background-insets: 1 0 1 1;
+    -fx-background-radius: 2 0 0 2;
+}
+
+.datepicker:focused > .text-field,
+.datepicker > .text-field:focused {
+    -fx-background-color: transparent;
+    -fx-background-insets: 1 0 1 1, 1 0 1 1, 3 2 3 3;
+    -fx-background-radius: 2 0 0 2, 1 0 0 1, 0;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-fill-text: #FFFFFF;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-background-color: #FFFFFF;
+    -fx-fill-text: #FFFFFF;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #565756, #9c9c9c);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+    -fx-alignment: CENTER;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f0eded;
+    -fx-text-background-color: #FFFFFF;
+    -fx-font-weight: bold;
+}
+.table-row-cell:odd{
+    -fx-background-color: #9c9c9c;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #d9d7d7;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+
+
+.cartaologin{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/cartaosocio.png');  
+}
+
+.imagemtitulo{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/vsc.png');  
+}
+
+.quotas{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/estadio-socio.png');  
+}
+
+.reservarbilhetes{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/bilhetes.png');  
+}
+
+.historicobilhetes{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/historico.png');  
+}
+
+.historicojogos{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/scoreboard.png');  
+}
+
+.validarcompras{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/compras.png');  
+    -fx-background-color: transparent;
+}
+
+.jogosGestor{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/bola1.png'); 
+}
+.historicobilhetes{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/historico.png');  
+}
+
+.historicojogos{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/scoreboard.png');  
+}
+
+.validarcompras{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/compras.png');  
+    -fx-background-color: transparent;
+}
+
+.imagemtitulo{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/vsc.png');  
+}
+
+.quotas{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/estadio-socio.png');  
+}
+
+.reservarbilhetes{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/bilhetes.png');  
+}
+
+.historicobilhetes{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/historico.png');  
+}
+
+.historicojogos{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/scoreboard.png');  
+}
+
+.validarcompras{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/compras.png');  
+    -fx-background-color: transparent;
+}
+
+.jogosGestor{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/bola1.png'); 
+}
+
+.infojogos{
+   -fx-width: 100%;
+   -fx-height: auto;
+   -fx-image: url('../images/alterarJogos.png'); 
+}
+
+.modalidades{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/Modalidade.png');
+}
+
+.socio{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/utilizador1.png');  
+}
+
+.informacoes{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/visualizarInformacao.png');  
+}
+
+.warning{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/atraso.png');  
+}
+
+.certo{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/atualizadas.png');  
+}
+
+.right{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/adicionar.png');  
+}
+
+.wrong{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/eliminar.png');  
+}
+
+.jogosindisponiveis{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/jogos-indisponiveis.png');  
+}
+
+.labeljogosindisponiveis{
+    -fx-background-color: transparent;
+    -fx-text-fill: #930000;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 16px;
+}
+
+.labelsocio{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 14px;
+}
+
+.equipa{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-align: center;
+    -fx-font-family: "Rockwell Condensed"; 
+    -fx-font-size: 30px;   
+}
+
+.diajogo{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-align: center;
+    -fx-font-family: "Bodoni MT Condensed"; 
+    -fx-font-size: 32px;
+}
+
+.local{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-align: center;
+    -fx-font-family: "Bodoni MT Condensed"; 
+    -fx-font-size: 25px; 
+}
+
+.bilhete{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/bilhete.png');  
+}
+
+.oneticket{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/oneticket.png');  
+}
+
+.liganos{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/logoLigaNos.png');  
+}
+
+.cartao{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/foto.png');  
+}
+
+.categoriasocio{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFF00;
+    -fx-text-align: center;
+    -fx-font-family: "Rockwell Condensed"; 
+    -fx-font-size: 30px; 
+}
+
+.qrcode{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/code.png');  
+}
+
+.validarcompras{
+    -fx-background-color: transparent;
+    -fx-text-fill: #aba8a8;
+    -fx-text-align: center;
+    -fx-font-family: "Arial Bold"; 
+    -fx-font-size: 16px; 
+}
+
+.logo{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/logo-1vitoriasc.png');  
+}
+
+.adv{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/adv.png');  
+}
+
+.location{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/location.png');  
+}
+
+.triangulo{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/triangulo.png');  
+}
+
+.vs{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/vs.png');  
+}
+
+.liga{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/liga.png');  
+}
+
+.combo{
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-color: blue;
+    -fx-text-fill: #B2AA99;
+    -fx-text-align: center; 
+    -fx-font-family: "Arial"; 
+    -fx-font-size: 18px;
+}
+
+.benfica{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/benfica.png');  
+}
+
+.porto{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/porto.png');  
+}
+
+.sporting{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/sporting.png');  
+}
+
+.braga{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/braga.png');  
+}
+
+.rioave{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/rioave.png');  
+}
+
+.boavista{
+    -fx-width: 100%;
+    -fx-height: auto;
+    -fx-image: url('../images/boavista.png');  
+}
+
+.resultado{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-align: center;
+    -fx-font-family: "Bodoni MT Condensed"; 
+    -fx-font-size: 60px; 
+}
+
+.data{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-align: center;
+    -fx-font-family: "Bodoni MT Condensed"; 
+    -fx-font-size: 16px; 
+}

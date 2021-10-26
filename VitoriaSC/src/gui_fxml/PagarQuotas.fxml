@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="650.0" styleClass="anchor" stylesheets="@../gui_css/cssconfig.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_controller.PagarQuotasController">
+   <children>
+      <ImageView fitHeight="260.0" fitWidth="224.0" layoutX="392.0" layoutY="123.0" pickOnBounds="true" styleClass="quotas" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b1b1b00" height="33.0" layoutX="437.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" styleClass="subtitulospagarquotas" width="136.0" />
+      <Label id="q" layoutX="241.0" layoutY="76.0" styleClass="subtitulospagarquotas" stylesheets="@../gui_css/cssconfig.css" text="3" textFill="WHITE" />
+      <Label layoutX="213.0" layoutY="14.0" prefHeight="37.0" prefWidth="224.0" styleClass="titulos" text="PAGAR QUOTAS" />
+      <Label layoutX="26.0" layoutY="14.0" styleClass="voltar" text="⬅" />
+      <Button layoutX="15.0" layoutY="14.0" maxWidth="60.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#handleVoltarButton" prefHeight="37.0" prefWidth="46.0" styleClass="voltar" stylesheets="@../gui_css/cssconfig.css" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="465.0" layoutY="332.0" mnemonicParsing="false" onAction="#handlePagarButton" prefHeight="37.0" prefWidth="80.0" styleClass="btn" stylesheets="@../gui_css/cssconfig.css" text="PAGAR" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdcdcd" height="33.0" layoutX="23.0" layoutY="70.0" stroke="#171717ed" strokeType="INSIDE" width="344.0" />
+      <Label layoutX="41.0" layoutY="75.0" prefHeight="22.0" prefWidth="307.0" styleClass="subtitulospagarquotas" stylesheets="@../gui_css/cssconfig.css" text="TOTAL EM ATRASO: (   QUOTA(S))" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="quotasocio" layoutX="70.0" layoutY="230.0" styleClass="pagarquotas" text="2011" />
+      <Label layoutX="41.0" layoutY="191.0" styleClass="subsubtitulos" stylesheets="@../gui_css/cssconfig.css" text="SUA QUOTA" />
+      <Label layoutX="216.0" layoutY="191.0" styleClass="subsubtitulos" text="QUOTA ATUAL " />
+      <Label fx:id="quotatual" layoutX="264.0" layoutY="230.0" styleClass="pagarquotas" text="2011" />
+      <Label layoutX="101.0" layoutY="289.0" styleClass="subsubtitulos" text="Nº QUOTAS A PAGAR" />
+      <Separator fx:id="s1" layoutX="142.0" layoutY="353.0" prefHeight="3.0" prefWidth="108.0" />
+      <Label fx:id="quotaprevista" layoutX="413.0" layoutY="161.0" styleClass="subtitulospagarquotas" text="Quota prevista:" />
+      <Label fx:id="previsao" alignment="CENTER_RIGHT" layoutX="555.0" layoutY="161.0" styleClass="subtitulospagarquotas" text="2011" />
+      <Label layoutX="457.0" layoutY="297.0" prefHeight="21.0" prefWidth="93.0" styleClass="subtitulospagarquotas" text="Total:" />
+      <Label fx:id="total" layoutX="512.0" layoutY="297.0" styleClass="subtitulospagarquotas" text="52" />
+      <Separator layoutX="24.0" layoutY="166.0" prefHeight="3.0" prefWidth="344.0" />
+      <TextField fx:id="nquotaspagar" alignment="CENTER" layoutX="142.0" layoutY="321.0" onKeyReleased="#hundleAtualizaTalao" prefHeight="33.0" prefWidth="108.0" promptText="Nº quotas" styleClass="txtfield" />
+      <Label layoutX="90.0" layoutY="139.0" prefHeight="21.0" prefWidth="243.0" styleClass="subsubtitulos" stylesheets="@../gui_css/cssconfig.css" text="DETALHES DA  COMPRA" />
+      <Label fx:id="quotasematraso" layoutX="234.0" layoutY="75.0" styleClass="subtitulospagarquotas" stylesheets="@../gui_css/cssconfig.css" text="." />
+      <Label fx:id="txterror" alignment="CENTER" layoutX="66.0" layoutY="360.0" prefHeight="18.0" prefWidth="259.0" styleClass="msgerro" text="(Existem erros nos campos assinalados)" />
+      <Button layoutX="392.0" layoutY="69.0" mnemonicParsing="false" onAction="#handleMelhorCategoriaButton" prefHeight="33.0" prefWidth="224.0" styleClass="btn" stylesheets="@../gui_css/cssconfig.css" text="Melhorar Categoria" />
+      <Label fx:id="calculoquota" layoutX="413.0" layoutY="183.0" prefHeight="16.0" prefWidth="108.0" styleClass="subsubtitulospagarquotas" text="4 x 13" />
+      <Label fx:id="subtotal" alignment="CENTER_RIGHT" layoutX="486.0" layoutY="183.0" prefHeight="16.0" prefWidth="108.0" styleClass="subsubtitulospagarquotas" text="13€" />
+      <Label fx:id="novacat" layoutX="412.0" layoutY="134.0" prefHeight="22.0" prefWidth="190.0" styleClass="subtitulospagarquotas" text="Nova categoria:   20€" />
+      <Label fx:id="txterror2" alignment="CENTER" layoutX="398.0" layoutY="104.0" prefHeight="18.0" prefWidth="214.0" styleClass="msgerro" text="(Já pertence à categoria máxima)" />
+   </children>
+</AnchorPane>
